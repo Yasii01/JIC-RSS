@@ -1,19 +1,4 @@
-/* =====================================================================
-   JIC-RSS — SQL Server schema
-   JIC Registration Support System (Jubail Industrial College)
-   Engine: SQL Server · sqlsrv · Laravel 10 · PHP 8.1 · Laragon
-   Source of truth: "RSS ERD(updated).pdf/.png" (15 entities) + Deliverable 2.
 
-   Exactly the 15 ERD entities. Column names = the ERD attribute names in
-   snake_case (Student_FName -> student_fname). Columns tagged [UI] are the
-   only additions — the designed screens need them (Blueprint §4.3).
-   No table outside the ERD.
-
-   FK policy: only special_request_documents cascade from their special
-   request. Everything else is NO ACTION (accounts are deactivated through
-   *_is_active, requests and history are never deleted — they are the
-   audit trail the reports are built from).
-   ===================================================================== */
 SET ANSI_NULLS ON;
 SET QUOTED_IDENTIFIER ON;
 GO
